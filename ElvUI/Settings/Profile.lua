@@ -304,10 +304,7 @@ local NP_Auras = {
 
 local NP_Health = {
 	enable = true,
-	healPrediction = {
-		enable = true,
-		absorbs = false,
-	},
+	healPrediction = true,
 	height = 10,
 	useClassColor = true,
 	text = {
@@ -544,10 +541,6 @@ P.nameplates = {
 		healPrediction = {
 			personal = {r = 0, g = 1, b = 0.5, a = 0.25},
 			others = {r = 0, g = 1, b = 0, a = 0.25},
-			absorbs = {r = 1, g = 1, b = 1, a = 0.35},
-			healAbsorbs = {r = 1, g = 0, b = 0, a = 0.35},
-			overflowHeals = false,
-			overflowAbsorbs = false,
 		},
 		threat = {
 			goodColor = {r = 0.20, g = 0.71, b = 0.00},
@@ -1114,11 +1107,7 @@ P.unitframe = {
 		healPrediction = {
 			personal = {r = 0, g = 1, b = 0.5, a = 0.25},
 			others = {r = 0, g = 1, b = 0, a = 0.25},
-			absorbs = {r = 1, g = 1, b = 1, a = 0.35},
-			healAbsorbs = {r = 1, g = 0, b = 0, a = 0.35},
-			maxOverflow = 0,
-			overflowHeals = false,
-			overflowAbsorbs = false,
+			maxOverflow = 0
 		},
 		classResources = {
 			comboPoints = {
@@ -1169,8 +1158,7 @@ P.unitframe = {
 			height = 54,
 			lowmana = 30,
 			healPrediction = {
-				enable = true,
-				absorbs = true,
+				enable = true
 			},
 			threatStyle = "GLOW",
 			smartAuraPosition = "DISABLED",
@@ -1453,8 +1441,7 @@ P.unitframe = {
 			smartAuraPosition = "DISABLED",
 			colorOverride = "USE_DEFAULT",
 			healPrediction = {
-				enable = true,
-				absorbs = false,
+				enable = true
 			},
 			middleClickFocus = true,
 			disableMouseoverGlow = false,
@@ -1913,8 +1900,7 @@ P.unitframe = {
 			width = 190,
 			height = 36,
 			healPrediction = {
-				enable = true,
-				absorbs = false,
+				enable = true
 			},
 			disableMouseoverGlow = false,
 			disableTargetGlow = false,
@@ -2214,8 +2200,7 @@ P.unitframe = {
 			width = 130,
 			height = 36,
 			healPrediction = {
-				enable = true,
-				absorbs = false,
+				enable = true
 			},
 			disableMouseoverGlow = false,
 			disableTargetGlow = true,
@@ -2650,8 +2635,7 @@ P.unitframe = {
 			width = 246,
 			height = 47,
 			healPrediction = {
-				enable = true,
-				absorbs = false,
+				enable = true
 			},
 			colorOverride = "USE_DEFAULT",
 			disableMouseoverGlow = false,
@@ -2813,8 +2797,7 @@ P.unitframe = {
 			startFromCenter = false,
 			showPlayer = true,
 			healPrediction = {
-				enable = true,
-				absorbs = false,
+				enable = true
 			},
 			colorOverride = "USE_DEFAULT",
 			width = 184,
@@ -3083,8 +3066,7 @@ P.unitframe = {
 			sortDir = "ASC",
 			showPlayer = true,
 			healPrediction = {
-				enable = true,
-				absorbs = false,
+				enable = true
 			},
 			colorOverride = "USE_DEFAULT",
 			width = 80,
@@ -3281,8 +3263,7 @@ P.unitframe = {
 			sortDir = "ASC",
 			showPlayer = true,
 			healPrediction = {
-				enable = true,
-				absorbs = false,
+				enable = true
 			},
 			colorOverride = "USE_DEFAULT",
 			width = 80,

@@ -705,14 +705,10 @@ end
 function A:ActuallyUpdateAllAnchors(buttons, container, tooltip)
 	local index = 0
 	db = self.db.buffs
-	local xOffset, wrapYOffset, minWidth, minHeight
+	local xOffset, wrapYOffset
 	local size = db.size
-	local point = DIRECTION_TO_POINT[db.growthDirection]
 	local wrapAfter = 4
-	local maxWraps = db.maxWraps
 
-	minWidth = ((wrapAfter == 1 and 0 or db.horizontalSpacing) + size) * wrapAfter
-	minHeight = (db.verticalSpacing + size) * maxWraps
 	xOffset = DIRECTION_TO_HORIZONTAL_SPACING_MULTIPLIER[db.growthDirection] * (db.horizontalSpacing + size)
 	wrapYOffset = DIRECTION_TO_VERTICAL_SPACING_MULTIPLIER[db.growthDirection] * (db.verticalSpacing + size)
 
@@ -784,7 +780,6 @@ local function InitConsolidated(offset)
 	ElvuiConsolidatedBuffs:SetScript("OnUpdate", ElvuiConsolidatedBuffs_OnUpdate)
 	ElvuiConsolidatedBuffs:SetScript("OnEnter", ElvuiConsolidatedBuffs_OnEnter)
 	ElvuiConsolidatedBuffsContainer:SetPoint("TOPLEFT", ElvuiConsolidatedBuffsTooltip, offset, -offset)
-	ElvuiConsolidatedBuffsContainer:SetPoint("TOPLEFT", ElvuiConsolidatedBuffsTooltip, offset, -offset)
 
 
 	A:CreateIcon(ElvuiVanityBuffs)
@@ -794,7 +789,6 @@ local function InitConsolidated(offset)
 	ElvuiVanityBuffs.statusBar.backdrop:SetBackdropBorderColor(cr, cg, cb)
 	ElvuiVanityBuffs:SetScript("OnUpdate", ElvuiVanityBuffs_OnUpdate)
 	ElvuiVanityBuffs:SetScript("OnEnter", ElvuiVanityBuffs_OnEnter)
-	ElvuiVanityBuffsContainer:SetPoint("TOPLEFT", ElvuiVanityBuffsTooltip, offset, -offset)
 	ElvuiVanityBuffsContainer:SetPoint("TOPLEFT", ElvuiVanityBuffsTooltip, offset, -offset)
 end
 
